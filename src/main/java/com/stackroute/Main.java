@@ -10,7 +10,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans");
         System.out.println("Beans Loaded Using ApplicationContext");
         Movie movie1 = context.getBean("movie1", Movie.class);
-
         movie1.movieInfo();
         System.out.println();
 

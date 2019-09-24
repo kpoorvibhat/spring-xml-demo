@@ -17,7 +17,7 @@
         <constructor-arg name="age" value="22" />
     </bean>
 
-    <bean name = "movie1" class = "com.stackroute.domain.Movie" autowire="byName" />
+    <bean name = "movie1" class = "com.stackroute.domain.Movie" autowire="constructor" />
 
 
 </beans>

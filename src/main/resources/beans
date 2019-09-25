@@ -18,6 +18,6 @@
     </bean>
 
     <bean name = "movie1" class = "com.stackroute.domain.Movie" autowire="constructor" />
-
+    <bean name = "movie2" class="com.stackroute.domain.Movie" autowire="constructor" />
 
 </beans>

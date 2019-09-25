@@ -24,4 +24,6 @@
             <property name="message" value="Message to demonstrate Bean Lifecycle"/>
     </bean>
 
+    <bean id="beanProcessor" class="com.stackroute.demo.BeanPostProcessorDemoBean" />
+
 </beans>

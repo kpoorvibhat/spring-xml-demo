@@ -24,8 +24,8 @@ public class Actor {
         this.age = age;
     }
 
-    public void actorInfo(){
-        System.out.println(name + " " + gender + " Actor is acting at the age of " + age);
+    public String getActorInfo(){
+        return name + " " + gender + " Actor is acting at the age of " + age;
     }
 
 }

@@ -11,7 +11,7 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
 
-        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("beans"));
+        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("beans.xml"));
         System.out.println("Beans Loaded Using XmlBeanFactory");
         Movie movie1 = factory.getBean("movie1", Movie.class);
         Movie movie4 = factory.getBean("movie4", Movie.class);
@@ -19,7 +19,7 @@ public class Main {
         System.out.println(movie1==movie4);
         System.out.println();
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("Beans Loaded Using ApplicationContext");
         Movie movie2 = context.getBean("movie2", Movie.class);
         Movie movieCompare = context.getBean("movie2", Movie.class);
